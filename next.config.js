@@ -15,8 +15,8 @@ const routes = {
 };
 
 const nextConfig = {
-  turbopack: {},
-  devIndicators: false,
+//   turbopack: {},
+  devIndicators: {},
   reactStrictMode: true,
   rewrites: async () => [
     ...Object.keys(routes).map(route => ({
@@ -51,12 +51,12 @@ const nextConfig = {
       },
     ],
   },
-  allowedDevOrigins: [
-    `local-origin.dev`,
-    `*.local-origin.dev`,
-    `http://localhost:3000`,
-    `http://127.0.0.1:3000`,
-  ],
+//   allowedDevOrigins: [
+//     `local-origin.dev`,
+//     `*.local-origin.dev`,
+//     `http://localhost:3000`,
+//     `http://127.0.0.1:3000`,
+//   ],
 };
 
 // export default withPWA({

@@ -1,13 +1,14 @@
 'use client';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+
+import gsap from 'gsap';
+import Nav from './nav';
 import styles from './style.module.scss';
+import Magnetic from '../../common/Magnetic';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
-import Nav from './nav';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
-import Magnetic from '../../common/Magnetic';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 export default function index() {
     const header = useRef(null);

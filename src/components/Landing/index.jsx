@@ -1,12 +1,13 @@
-'use client'
-import Image from 'next/image'
-import styles from './style.module.scss'
-import { useRef, useLayoutEffect } from 'react';
+'use client';
+
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import Image from 'next/image';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
-import { img } from '@/app/layout';
+import styles from './style.module.scss';
+import { ScrollTrigger } from 'gsap/all';
+import { img } from '@/common/lib/constants';
+import { useRef, useLayoutEffect } from 'react';
 
 export default function Home() {
 
@@ -47,9 +48,9 @@ export default function Home() {
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <Image 
+        src={img}
         fill={true}
         alt="background"
-        src={img}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>

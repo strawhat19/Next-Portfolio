@@ -4,9 +4,6 @@ import Header from '../components/Header';
 
 const inter = Inter({ subsets: ['latin'] })
 
-// export const img = `/images/background.jpg`;
-export const img = `https://raw.githubusercontent.com/strawhat19/Next-Portfolio/refs/heads/main/public/images/background.jpg`;
-
 export const metadata = {
   title: `Rakib Ahmed // Official Portfolio`,
   description: `Developer // Designer Portfolio`,

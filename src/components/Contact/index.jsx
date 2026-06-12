@@ -1,10 +1,10 @@
-import styles from './style.module.scss';
 import Image from 'next/image';
-import Rounded from '../../common/RoundedButton';
 import { useRef } from 'react';
-import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
+import styles from './style.module.scss';
 import Magnetic from '../../common/Magnetic';
-import { img } from '@/app/layout';
+import { img } from '@/common/lib/constants';
+import Rounded from '../../common/RoundedButton';
+import { useScroll, motion, useTransform } from 'framer-motion';
 
 export default function index() {
     const container = useRef(null);
@@ -22,9 +22,9 @@ export default function index() {
                     <span>
                         <div className={styles.imageContainer}>
                             <Image 
-                            fill={true}
-                            alt={"image"}
-                            src={img}
+                                src={img}
+                                fill={true}
+                                alt={"image"}
                             />
                         </div>
                         <h2>Let's work</h2>

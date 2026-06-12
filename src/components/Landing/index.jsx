@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
+import { img } from '@/app/layout';
 
 export default function Home() {
 
@@ -46,9 +47,9 @@ export default function Home() {
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <Image 
-        src="/images/background.jpg"
         fill={true}
         alt="background"
+        src={img}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>

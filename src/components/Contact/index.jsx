@@ -4,6 +4,7 @@ import Rounded from '../../common/RoundedButton';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
+import { img } from '@/app/layout';
 
 export default function index() {
     const container = useRef(null);
@@ -23,7 +24,7 @@ export default function index() {
                             <Image 
                             fill={true}
                             alt={"image"}
-                            src={`/images/background.jpg`}
+                            src={img}
                             />
                         </div>
                         <h2>Let's work</h2>

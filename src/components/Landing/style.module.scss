@@ -1,8 +1,14 @@
+.heroBG {
+  object-fit: cover;
+  will-change: transform;
+  transform-origin: center;
+}
+
 .landing{
-    position: relative;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 
     img{
       object-fit: cover;

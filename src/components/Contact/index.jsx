@@ -6,7 +6,7 @@ import { img } from '@/common/lib/constants';
 import Rounded from '../../common/RoundedButton';
 import { useScroll, motion, useTransform } from 'framer-motion';
 
-export default function index() {
+export default function Contact() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -27,7 +27,7 @@ export default function index() {
                                 alt={"image"}
                             />
                         </div>
-                        <h2>Let's work</h2>
+                        <h2>Let&apos;s work</h2>
                     </span>
                     <h2>together</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>

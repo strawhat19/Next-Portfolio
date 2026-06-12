@@ -40,7 +40,7 @@ export default function index() {
                 </div>
                 <div className={styles.nav}>
                         <Rounded>
-                            <p>info@dennissnellenberg.com</p>
+                            <p>info@piratechs.com</p>
                         </Rounded>
                         <Rounded>
                             <p>+31 6 27 84 74 30</p>
@@ -50,7 +50,7 @@ export default function index() {
                     <div>
                         <span>
                             <h3>Version</h3>
-                            <p>2022 © Edition</p>
+                            <p>Copyright © {new Date()?.getFullYear()}</p>
                         </span>
                         <span>
                             <h3>Version</h3>
